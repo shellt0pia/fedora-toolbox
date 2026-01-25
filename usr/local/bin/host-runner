@@ -1,3 +1,3 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
-exec flatpak-spawn --host --env=TERM=xterm-256color $(basename $0) "$@"
+exec flatpak-spawn --host --env=TERM=xterm-256color $(basename ${0}) "${@}"

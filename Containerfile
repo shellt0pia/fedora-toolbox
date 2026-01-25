@@ -3,7 +3,7 @@ FROM registry.fedoraproject.org/fedora-toolbox:43
 COPY usr/local/bin/ /usr/local/bin/
 
 RUN chmod +x /usr/local/bin/host-runner && \
-    for executable in podman; do \
+    for executable in firefox flatpak op podman rpm-ostree systemctl xdg-open; do \
       ln -s /usr/local/bin/host-runner /usr/local/bin/$executable; \
     done
 
