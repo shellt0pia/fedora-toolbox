@@ -1,2 +1,3 @@
-# fedora-toolbox-containerfile
-My personnal fedora-toolbox Containerfile
+# fedora-toolbox
+
+My personnal fedora-toolbox image.
