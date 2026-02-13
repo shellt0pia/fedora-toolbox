@@ -10,8 +10,6 @@ RUN chmod +x /usr/local/bin/host-runner && \
     done
 
 COPY etc/yum.repos.d/ /etc/yum.repos.d/
-RUN rpm --import https://packages.microsoft.com/keys/microsoft.asc
-
 COPY extra-packages /
 RUN dnf -y install $(<extra-packages) && dnf clean all && rm /extra-packages
 RUN mkdir -p /usr/local/share/zsh/site-functions
