@@ -2,7 +2,7 @@ name: Build & Push Fedora Toolbox image
 
 on:
   schedule:
-    - cron: '22 0 * * 0'
+    - cron: '0 12 * * *'
   push:
     branches: [ main ]
   pull_request:
