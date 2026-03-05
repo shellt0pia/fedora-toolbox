@@ -55,6 +55,7 @@ jobs:
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
             type=raw,value=${{ steps.version.outputs.fedora }}
+            type=ref,event=pr
             type=schedule,pattern={{date 'YYYYMMDD' tz='Europe/Paris'}}
 
       - name: Build and push Docker image
@@ -68,3 +69,11 @@ jobs:
           provenance: false
           cache-from: type=gha
           cache-to: type=gha,mode=max
+
+      - name: Prune old Docker images from registry
+        id: prune
+        uses: actions/delete-package-versions@v5.0.0
+        with:
+          package-name: fedora-toolbox
+          package-type: container
+          min-versions-to-keep: 10
