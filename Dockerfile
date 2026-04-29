@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora-toolbox:43
+FROM registry.fedoraproject.org/fedora-toolbox:44
 
 LABEL org.opencontainers.image.url=https://github.com/shellt0pia/fedora-toolbox
 LABEL org.opencontainers.image.authors="Victor 'shellt0pia' Bouvier-Deleau"
