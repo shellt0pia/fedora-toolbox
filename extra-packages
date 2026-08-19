@@ -17,6 +17,7 @@ iputils
 jq
 just
 levien-inconsolata-fonts
+libsecret
 make
 ndisc6
 netcat
