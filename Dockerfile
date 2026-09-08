@@ -4,6 +4,7 @@ LABEL org.opencontainers.image.url=https://github.com/shellt0pia/fedora-toolbox
 LABEL org.opencontainers.image.authors="Victor 'shellt0pia' Bouvier-Deleau"
 
 COPY etc/yum.repos.d/ /etc/yum.repos.d/
+COPY etc/vulkan/icd.d/ /etc/vulkan/icd.d/
 COPY extra-packages /
 
 RUN dnf -y install $(<extra-packages) && \

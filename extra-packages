@@ -43,6 +43,8 @@ vim
 wget
 whois
 yt-dlp
+zed
+zed-cli
 zip
 zsh
 zsh-autosuggestions
