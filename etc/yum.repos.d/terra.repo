@@ -10,3 +10,4 @@ repo_gpgcheck=1
 enabled=1
 enabled_metadata=1
 countme=1
+excludepkgs=1password*
