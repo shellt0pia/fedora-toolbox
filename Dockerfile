@@ -11,6 +11,6 @@ RUN dnf -y install $(<extra-packages) && \
     dnf clean all && \
     rm /extra-packages
 
-RUN for executable in firefox flatpak op podman rpm-ostree systemctl xdg-open; do \
+RUN for executable in firefox flatpak podman rpm-ostree systemctl xdg-open; do \
       ln -s /usr/bin/host-spawn /usr/local/bin/${executable}; \
     done
