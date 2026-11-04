@@ -1,4 +1,4 @@
-FROM quay.io/fedora/fedora-toolbox:44
+FROM quay.io/fedora/fedora-toolbox:45
 
 LABEL org.opencontainers.image.url=https://github.com/shellt0pia/fedora-toolbox
 LABEL org.opencontainers.image.authors="Victor 'shellt0pia' Bouvier-Deleau"
